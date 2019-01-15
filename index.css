@@ -2,5 +2,14 @@
 
 body {
     font-family: 'Questrial', sans-serif;
-    background: linear-gradient(to left,#f9fffd, #ffebcc);
+    background: linear-gradient(to left, #f9fffd 40%, #ffebcc);
+}
+
+a.fab {
+    color: black;
+    transition: 300ms;
+}
+
+a.fab:hover {
+    color: gray;
 }
