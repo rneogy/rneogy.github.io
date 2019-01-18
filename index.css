@@ -3,7 +3,7 @@
 body {
     font-family: 'Questrial', sans-serif;
     background: linear-gradient(38deg, #bcffee, #ffe0a3);
-    background-size: 400% 400%;
+    background-size: 200vw 200vh;
     animation: bg-anim 19s ease infinite;
     color: #3a5750;
 }
@@ -12,6 +12,10 @@ body {
     0%{background-position:0% 18%}
     50%{background-position:100% 60%}
     100%{background-position:0% 18%}
+}
+
+::selection {
+    background-color: rgba(143, 103, 16, 0.459);
 }
 
 h5 > a {
