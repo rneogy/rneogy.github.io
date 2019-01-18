@@ -1,23 +1,25 @@
 import React, { Component } from 'react';
+import Link from './Link';
 
 class Home extends Component {
   render() {
     return (
-        <div class='row'>
-            <div id='main-col' class='col text-right'>
-                <div class='name animated fadeIn'>Rupayan Neogy</div>
-                <div class="animated fadeIn delay-1s">
-                    <div class='tagline'>A Vocal Developer</div>
-                    <h2 class='mt-5'>Projects:</h2>
-                    <h3>
-                        <a href="/6.837FluidSimulation" class='link'>2D Coffee (Fluid) Simulation in WebGL</a>
-                    </h3>
-                    <h3>
-                        <a href="/ShapeShooter" class='link'>ShapeShooter (game created in 3 days)</a>
-                    </h3>
-                    <h1>
-                        <a href='https://github.com/rneogy' class="fab fa-github-square"></a>&nbsp;
-                        <a href='https://www.linkedin.com/in/rupayan-neogy' class="fab fa-linkedin"></a>
+        <div className='row'>
+            <div id='main-col' className='col text-right'>
+                <div className='name animated fadeIn'>Rupayan Neogy</div>
+                <div className="animated fadeIn delay-1s">
+                    <div className='tagline'>A Vocal Developer</div>
+                    <h2 className='mt-5 underline'>Projects:</h2>
+                    {this.props.content.map((c,i) => (
+                        <Link 
+                            fn={this.props.changePage}
+                            args={[false, i]}
+                            text={c.title}
+                        />
+                    ))}
+                    <h1 className='mt-4'>
+                        <a href='https://github.com/rneogy'><i className="fab fa-github-square"></i></a>&nbsp;
+                        <a href='https://www.linkedin.com/in/rupayan-neogy'><i className="fab fa-linkedin"></i></a>
                     </h1>
                 </div>
             </div>
