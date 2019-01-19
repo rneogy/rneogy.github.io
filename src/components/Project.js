@@ -13,7 +13,7 @@ class Project extends Component {
                     <div className='name animated fadeIn'>{this.props.content.title}</div>
                     <div className="animated fadeIn delay-1s">
                         <div className='tagline'>{this.props.content.tagline}</div>
-                        <h2 className='my-5'>{this.props.content.description}</h2>
+                        <h3 className='my-5'>{this.props.content.description}</h3>
                         {link}
                         <Link 
                             fn={this.props.changePage}

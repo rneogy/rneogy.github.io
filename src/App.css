@@ -11,6 +11,10 @@
   font-size: 70px;
 }
 
+.underline {
+  text-decoration: underline;
+}
+
 ::selection {
   background-color: rgba(143, 103, 16, 0.459);
 }
@@ -46,12 +50,12 @@
   transform: scaleX(1);
 }
 
-i.fab {
+i[class^='fa'] {
   color: #3a5750;
   transition: 300ms;
 }
 
-i.fab:hover {
+i[class^='fa']:hover {
   color: gray;
   transform: translateY(-5px);
 }
