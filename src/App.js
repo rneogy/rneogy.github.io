@@ -72,6 +72,7 @@ class App extends Component {
     }
     return (
       <div className='container'>
+        <div className="alert alert-warning text-center fixed-top"><strong>Hey there!</strong> This website is still under construction! Feel free to poke around, but forgive any broken links, incomplete descriptions, etc!</div>
         {el}
       </div>
     );
