@@ -38,7 +38,7 @@ class App extends Component {
       },
       {
         title: "Spotify Explorer",
-        tagline: "Interactive and Animated Data using D3",
+        tagline: "Chart-toppers in D3",
         description: `I created this web-app as an assignment for MIT's Interactive Data Visualization class (6.894). 
         The experience focuses on dynamic and interesting interaction techniques using d3.js. I built this visualization 
         over the course of a couple weeks on a team of two others.`,
